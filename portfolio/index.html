@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Jean Baptiste David N'Guessan — Digital Automation Developer in Abidjan, Côte d'Ivoire.">
+    <meta name="author" content="Jean Baptiste David N'Guessan">
+
+    <title>Jean Baptiste David N'Guessan | Digital Automation Developer</title>
+
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230C254D'/><text x='16' y='22' font-family='Arial' font-size='13' font-weight='700' fill='%23F07818' text-anchor='middle'>JB</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind is used directly in the HTML for this checkpoint. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ink: '#061426',
+                        navy: '#0C254D',
+                        navyLight: '#10305E',
+                        paper: '#EEF3FA',
+                        muted: '#9DB2CE',
+                        dim: '#6E86A4',
+                        orange: '#F07818',
+                        green: '#00B368'
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                        mono: ['Roboto Mono', 'Courier New', 'monospace']
+                    },
+                    boxShadow: {
+                        glow: '0 28px 70px rgba(0,0,0,.42)'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-ink text-muted font-sans text-[16px] leading-7 antialiased selection:bg-orange selection:text-ink">
+
+    <a href="#main"
+        class="absolute -left-[9999px] top-0 z-[100] rounded-br-lg bg-orange px-5 py-3 font-bold text-ink focus:left-0">
+        Skip to content
+    </a>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 border-b border-white/[0.08] bg-ink/85 backdrop-blur-xl">
+        <nav class="mx-auto flex max-w-[1140px] flex-wrap items-center justify-between gap-3 px-5 py-3.5 sm:px-6"
+            aria-label="Main navigation">
+
+            <a href="#home" class="flex shrink-0 items-center gap-2.5 no-underline">
+                <span class="grid h-9 w-9 place-items-center rounded-lg bg-orange text-sm font-black text-ink">
+                    JB
+                </span>
+                <span class="font-bold tracking-tight text-paper">
+                    David N'Guessan
+                </span>
+            </a>
+
+            <ul class="flex max-w-full items-center gap-1 overflow-x-auto whitespace-nowrap pb-0.5 scrollbar-none">
+                <li><a href="#home"
+                        class="rounded-lg px-3 py-2 text-sm font-medium text-muted transition hover:bg-white/[0.06] hover:text-paper">Home</a>
+                </li>
+                <li><a href="#about"
+                        class="rounded-lg px-3 py-2 text-sm font-medium text-muted transition hover:bg-white/[0.06] hover:text-paper">About</a>
+                </li>
+                <li><a href="#work"
+                        class="rounded-lg px-3 py-2 text-sm font-medium text-muted transition hover:bg-white/[0.06] hover:text-paper">Work</a>
+                </li>
+                <li><a href="#resume"
+                        class="rounded-lg px-3 py-2 text-sm font-medium text-muted transition hover:bg-white/[0.06] hover:text-paper">Resume</a>
+                </li>
+                <li><a href="#contact"
+                        class="ml-1 rounded-lg border border-orange/50 px-3 py-2 text-sm font-medium text-orange transition hover:bg-orange/10">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- Hero -->
+        <section id="home"
+            class="relative isolate overflow-hidden border-b border-white/[0.08] bg-navy bg-[url('img/demo-poster.png')] bg-cover bg-center">
+            <div class="absolute inset-0 -z-10 bg-[radial-gradient(100%_130%_at_78%_20%,rgba(12,37,77,.90),rgba(6,20,38,.98)_70%)]"></div>
+            <div class="absolute inset-0 -z-10 bg-ink/35"></div>
+
+            <div class="mx-auto grid max-w-[1140px] items-center gap-10 px-5 py-16 sm:px-6 md:grid-cols-[1.1fr_.9fr] md:gap-16 md:py-24">
+                <div>
+                    <p class="inline-flex items-center gap-2 rounded-full border border-white/[0.10] bg-white/[0.03] px-3.5 py-1.5 font-mono text-xs text-muted">
+                        <span class="h-2 w-2 animate-pulse rounded-full bg-green shadow-[0_0_0_5px_rgba(0,179,104,.10)]"></span>
+                        Open to freelance and full-time work
+                    </p>
+
+                    <h1 class="mt-6 max-w-[13ch] text-[clamp(2.6rem,6.4vw,4.6rem)] font-black leading-[.96] tracking-[-.04em] text-paper">
+                        Jean Baptiste David N'Guessan
+                    </h1>
+
+                    <p class="mt-5 text-[clamp(1.05rem,2vw,1.3rem)] font-medium tracking-tight text-orange">
+                        Digital automation developer, Abidjan
+                    </p>
+
+                    <p class="mt-4 max-w-[54ch] text-[1.04rem] font-light leading-[1.8] text-muted">
+                        I write the scripts and build the tools that take repetitive work off
+                        people's hands: reports that send themselves, dashboards that stay
+                        current, and back offices that run without anyone clicking through them.
+                    </p>
+
+                    <div class="mt-8 flex flex-wrap gap-3.5">
+                        <a href="#contact"
+                            class="rounded-lg bg-orange px-6 py-3 font-bold text-ink transition hover:-translate-y-0.5 hover:bg-[#ff8d33] focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2 focus:ring-offset-ink">
+                            Contact me
+                        </a>
+                        <a href="#work"
+                            class="rounded-lg border border-white/[0.12] bg-transparent px-6 py-3 font-bold text-paper transition hover:-translate-y-0.5 hover:bg-white/[0.06]">
+                            See my work
+                        </a>
+                    </div>
+                </div>
+
+                <figure class="relative justify-self-center md:justify-self-end">
+                    <div class="absolute -inset-16 rounded-full bg-navyLight/80 blur-3xl"></div>
+                    <img src="img/profile.png"
+                        alt="Portrait of Jean Baptiste David N'Guessan"
+                        width="556" height="594"
+                        class="relative w-[min(340px,76vw)] drop-shadow-glow [mask-image:radial-gradient(ellipse_closest-side,#000_93%,transparent_99%)]">
+                </figure>
+            </div>
+
+            <ul class="mx-auto flex max-w-[1140px] flex-wrap items-center px-5 pb-10 sm:px-6">
+                <li class="border-l-0 pr-4 font-mono text-xs text-dim">Python</li>
+                <li class="border-l border-white/[0.10] px-4 font-mono text-xs text-dim">Bash</li>
+                <li class="border-l border-white/[0.10] px-4 font-mono text-xs text-dim">PHP</li>
+                <li class="border-l border-white/[0.10] px-4 font-mono text-xs text-dim">Laravel</li>
+                <li class="border-l border-white/[0.10] px-4 font-mono text-xs text-dim">JavaScript</li>
+                <li class="border-l border-white/[0.10] px-4 font-mono text-xs text-dim">React</li>
+                <li class="border-l border-white/[0.10] px-4 font-mono text-xs text-dim">MySQL</li>
+                <li class="border-l border-white/[0.10] px-4 font-mono text-xs text-dim">REST APIs</li>
+            </ul>
+        </section>
+
+        <!-- About / Skills -->
+        <section id="about" class="mx-auto max-w-[1140px] border-b border-white/[0.08] px-5 py-16 sm:px-6 md:py-24">
+            <header class="mb-10 max-w-[62ch] md:mb-14">
+                <h2 class="relative pl-5 text-[clamp(1.7rem,3.4vw,2.35rem)] font-bold leading-tight tracking-tight text-paper before:absolute before:left-0 before:top-[.18em] before:bottom-[.18em] before:w-1 before:rounded-sm before:bg-orange">
+                    About me
+                </h2>
+                <p class="mt-4 pl-5 text-[1.04rem] font-light text-muted">
+                    I am a developer based in Abidjan, Côte d'Ivoire. Most of my work starts
+                    the same way: someone shows me a task they repeat every week, and I turn
+                    it into something that runs on its own.
+                </p>
+            </header>
+
+            <div class="grid gap-10 md:grid-cols-[.85fr_1.15fr] md:gap-16">
+                <div class="max-w-[46ch] font-light">
+                    <p>
+                        I work across the whole chain, from the script that pulls the data to
+                        the interface the team actually opens. That means Python and Bash for
+                        the automation itself, Laravel or plain PHP for the business logic,
+                        and React when the result needs a real interface.
+                    </p>
+                    <p class="mt-5">
+                        I care about tools people keep using after I hand them over, so I
+                        spend as much time on clear screens and readable code as on the
+                        automation behind them.
+                    </p>
+                </div>
+
+                <dl>
+                    <div class="grid gap-3 border-t border-white/[0.08] py-5 sm:grid-cols-[190px_1fr] sm:gap-6">
+                        <dt class="text-[.95rem] font-medium text-paper">Automation &amp; scripting</dt>
+                        <dd class="flex flex-wrap gap-2">
+                            <span class="rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1 font-mono text-xs text-muted">Python</span>
+                            <span class="rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1 font-mono text-xs text-muted">Bash</span>
+                            <span class="rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1 font-mono text-xs text-muted">Cron jobs</span>
+                            <span class="rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1 font-mono text-xs text-muted">Web scraping</span>
+                        </dd>
+                    </div>
+
+                    <div class="grid gap-3 border-t border-white/[0.08] py-5 sm:grid-cols-[190px_1fr] sm:gap-6">
+                        <dt class="text-[.95rem] font-medium text-paper">Backend</dt>
+                        <dd class="flex flex-wrap gap-2">
+                            <span class="rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1 font-mono text-xs text-muted">PHP</span>
+                            <span class="rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1 font-mono text-xs text-muted">Laravel</span>
+                            <span class="rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1 font-mono text-xs text-muted">REST APIs</span>
+                            <span class="rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1 font-mono text-xs text-muted">SQL / MySQL</span>
+                        </dd>
+                    </div>
+
+                    <div class="grid gap-3 border-t border-white/[0.08] py-5 sm:grid-cols-[190px_1fr] sm:gap-6">
+                        <dt class="text-[.95rem] font-medium text-paper">Frontend</dt>
+                        <dd class="flex flex-wrap gap-2">
+                            <span class="rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1 font-mono text-xs text-muted">HTML</span>
+                            <span class="rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1 font-mono text-xs text-muted">CSS</span>
+                            <span class="rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1 font-mono text-xs text-muted">JavaScript</span>
+                            <span class="rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1 font-mono text-xs text-muted">React</span>
+                        </dd>
+                    </div>
+
+                    <div class="grid gap-3 border-y border-white/[0.08] py-5 sm:grid-cols-[190px_1fr] sm:gap-6">
+                        <dt class="text-[.95rem] font-medium text-paper">Tooling</dt>
+                        <dd class="flex flex-wrap gap-2">
+                            <span class="rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1 font-mono text-xs text-muted">Git &amp; GitHub</span>
+                            <span class="rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1 font-mono text-xs text-muted">Linux</span>
+                            <span class="rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1 font-mono text-xs text-muted">VS Code</span>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="work" class="mx-auto max-w-[1140px] border-b border-white/[0.08] px-5 py-16 sm:px-6 md:py-24">
+            <header class="mb-10 max-w-[62ch] md:mb-14">
+                <h2 class="relative pl-5 text-[clamp(1.7rem,3.4vw,2.35rem)] font-bold leading-tight tracking-tight text-paper before:absolute before:left-0 before:top-[.18em] before:bottom-[.18em] before:w-1 before:rounded-sm before:bg-orange">
+                    My work
+                </h2>
+                <p class="mt-4 pl-5 text-[1.04rem] font-light">
+                    Four projects that show how I work, from a one-file script up to a full
+                    management system.
+                </p>
+            </header>
+
+            <ul class="divide-y divide-white/[0.08]">
+                <li class="grid gap-3 py-7 transition hover:bg-white/[0.02] md:grid-cols-[1fr_210px] md:gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold tracking-tight text-paper transition hover:text-orange">Dashboard Automation</h3>
+                        <p class="mt-2 max-w-[60ch] font-light">
+                            A reporting dashboard that collects sales and stock figures every
+                            morning, cleans them, and publishes a single view the team can read
+                            without asking anyone for a file.
+                        </p>
+                    </div>
+                    <p class="flex flex-wrap items-start gap-2 pt-1 font-mono text-xs text-dim md:justify-end">
+                        <span>Python</span><span>/</span><span>MySQL</span><span>/</span><span>Chart.js</span>
+                    </p>
+                </li>
+
+                <li class="grid gap-3 py-7 transition hover:bg-white/[0.02] md:grid-cols-[1fr_210px] md:gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold tracking-tight text-paper">E-commerce Management System</h3>
+                        <p class="mt-2 max-w-[60ch] font-light">
+                            Order tracking, stock levels and delivery status in one back office,
+                            built for a shop that was running the whole thing on spreadsheets
+                            and WhatsApp messages.
+                        </p>
+                    </div>
+                    <p class="flex flex-wrap items-start gap-2 pt-1 font-mono text-xs text-dim md:justify-end">
+                        <span>Laravel</span><span>/</span><span>MySQL</span><span>/</span><span>REST API</span>
+                    </p>
+                </li>
+
+                <li class="grid gap-3 py-7 transition hover:bg-white/[0.02] md:grid-cols-[1fr_210px] md:gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold tracking-tight text-paper">Business Automation Tools</h3>
+                        <p class="mt-2 max-w-[60ch] font-light">
+                            A set of small scripts that handle the jobs nobody wants: renaming
+                            and filing documents, sending recurring invoices, and backing up
+                            databases on a schedule.
+                        </p>
+                    </div>
+                    <p class="flex flex-wrap items-start gap-2 pt-1 font-mono text-xs text-dim md:justify-end">
+                        <span>Bash</span><span>/</span><span>Python</span><span>/</span><span>Cron</span>
+                    </p>
+                </li>
+
+                <li class="grid gap-3 py-7 transition hover:bg-white/[0.02] md:grid-cols-[1fr_210px] md:gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold tracking-tight text-paper">This portfolio</h3>
+                        <p class="mt-2 max-w-[60ch] font-light">
+                            Rebuilt from the original portfolio using Tailwind CSS utilities
+                            directly in the HTML, while keeping the original visual identity,
+                            accessibility and responsive behavior.
+                        </p>
+                    </div>
+                    <p class="flex flex-wrap items-start gap-2 pt-1 font-mono text-xs text-dim md:justify-end">
+                        <span>HTML</span><span>/</span><span>Tailwind CSS</span><span>/</span><span>Git</span>
+                    </p>
+                </li>
+            </ul>
+
+            <figure class="mt-10 max-w-[720px] rounded-2xl border border-white/[0.10] bg-navyLight p-3">
+                <video controls preload="metadata" width="700" poster="img/demo-poster.png"
+                    class="aspect-video w-full rounded-lg bg-ink object-cover">
+                    <source src="videos/project.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption class="px-1.5 pb-1 pt-3 font-mono text-xs leading-6 text-dim">
+                    Screen recording: the automation dashboard refreshing its data.
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- Resume -->
+        <section id="resume" class="mx-auto max-w-[1140px] border-b border-white/[0.08] px-5 py-16 sm:px-6 md:py-24">
+            <header class="mb-10 max-w-[62ch] md:mb-14">
+                <h2 class="relative pl-5 text-[clamp(1.7rem,3.4vw,2.35rem)] font-bold leading-tight tracking-tight text-paper before:absolute before:left-0 before:top-[.18em] before:bottom-[.18em] before:w-1 before:rounded-sm before:bg-orange">
+                    Resume
+                </h2>
+                <p class="mt-4 pl-5 text-[1.04rem] font-light">
+                    Where I have worked and studied, most recent first.
+                </p>
+            </header>
+
+            <div class="overflow-x-auto">
+                <table class="w-full min-w-[620px] border-collapse text-left">
+                    <caption class="pb-3 text-left font-mono text-xs text-dim">Experience and education</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="border-b border-orange pb-3 pr-4 text-sm font-medium text-paper">Year</th>
+                            <th scope="col" class="border-b border-orange pb-3 pr-4 text-sm font-medium text-paper">Experience / Education</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="w-[200px] border-b border-white/[0.08] py-5 pr-4 align-top font-mono text-[13px] text-orange whitespace-nowrap">12/2025 – Present</td>
+                            <td class="border-b border-white/[0.08] py-5 pr-4 align-top">
+                                <span class="block text-[1.06rem] font-medium text-paper">Digital Automation Developer</span>
+                                <span class="mt-1 block max-w-[58ch] text-[.97rem] font-light">Building automation tools, dashboards and internal web apps.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border-b border-white/[0.08] py-5 pr-4 align-top font-mono text-[13px] text-orange whitespace-nowrap">08/2025 – 12/2025</td>
+                            <td class="border-b border-white/[0.08] py-5 pr-4 align-top">
+                                <span class="block text-[1.06rem] font-medium text-paper">IT Internship</span>
+                                <span class="mt-1 block max-w-[58ch] text-[.97rem] font-light">Support on internal systems, scripting and process automation.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border-b border-white/[0.08] py-5 pr-4 align-top font-mono text-[13px] text-orange whitespace-nowrap">2024 – 2025</td>
+                            <td class="border-b border-white/[0.08] py-5 pr-4 align-top">
+                                <span class="block text-[1.06rem] font-medium text-paper">Bachelor Degree in Computer Engineering</span>
+                                <span class="mt-1 block max-w-[58ch] text-[.97rem] font-light">Software development, databases and networks.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border-b border-white/[0.08] py-5 pr-4 align-top font-mono text-[13px] text-orange whitespace-nowrap">2022 – 2025</td>
+                            <td class="border-b border-white/[0.08] py-5 pr-4 align-top">
+                                <span class="block text-[1.06rem] font-medium text-paper">Freelance Web Developer</span>
+                                <span class="mt-1 block max-w-[58ch] text-[.97rem] font-light">Websites and small business tools for local clients.</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="mt-6 text-[.97rem] font-light">
+                Need the full CV as a PDF?
+                <a href="mailto:nguessanjbdavid@gmail.com?subject=CV%20request"
+                    class="border-b border-orange pb-0.5 text-paper transition hover:text-orange">
+                    Email me
+                </a>
+                and I will send it the same day.
+            </p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="bg-gradient-to-b from-ink to-[#08203E] px-5 py-16 sm:px-6 md:py-24">
+            <div class="mx-auto max-w-[1140px]">
+                <header class="mb-10 max-w-[62ch] md:mb-14">
+                    <h2 class="relative pl-5 text-[clamp(1.7rem,3.4vw,2.35rem)] font-bold leading-tight tracking-tight text-paper before:absolute before:left-0 before:top-[.18em] before:bottom-[.18em] before:w-1 before:rounded-sm before:bg-orange">
+                        Contact me
+                    </h2>
+                    <p class="mt-4 pl-5 text-[1.04rem] font-light">
+                        Tell me what you repeat every week, and I will tell you whether it can be
+                        automated.
+                    </p>
+                </header>
+
+                <div class="grid gap-8 md:grid-cols-[1.25fr_.75fr] md:gap-16">
+                    <form action="#" method="post" class="space-y-5">
+                        <div class="grid gap-5 sm:grid-cols-2">
+                            <div>
+                                <label for="name" class="mb-2 block text-sm font-medium text-paper">Full name</label>
+                                <input id="name" name="name" type="text" placeholder="Kouassi Aya" required
+                                    class="w-full rounded-lg border border-white/[0.10] bg-white/[0.04] px-4 py-3 text-[15px] text-paper placeholder:text-dim outline-none transition hover:border-white/20 focus:border-orange focus:bg-white/[0.06] focus:ring-1 focus:ring-orange">
+                            </div>
+                            <div>
+                                <label for="email" class="mb-2 block text-sm font-medium text-paper">Email</label>
+                                <input id="email" name="email" type="email" placeholder="you@example.com" required
+                                    class="w-full rounded-lg border border-white/[0.10] bg-white/[0.04] px-4 py-3 text-[15px] text-paper placeholder:text-dim outline-none transition hover:border-white/20 focus:border-orange focus:bg-white/[0.06] focus:ring-1 focus:ring-orange">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="subject" class="mb-2 block text-sm font-medium text-paper">Subject</label>
+                            <input id="subject" name="subject" type="text"
+                                placeholder="Automating our weekly stock report"
+                                class="w-full rounded-lg border border-white/[0.10] bg-white/[0.04] px-4 py-3 text-[15px] text-paper placeholder:text-dim outline-none transition hover:border-white/20 focus:border-orange focus:bg-white/[0.06] focus:ring-1 focus:ring-orange">
+                        </div>
+
+                        <div>
+                            <label for="message" class="mb-2 block text-sm font-medium text-paper">Message</label>
+                            <textarea id="message" name="message" rows="6" required
+                                placeholder="A few lines about the task and how often it comes back."
+                                class="min-h-[150px] w-full resize-y rounded-lg border border-white/[0.10] bg-white/[0.04] px-4 py-3 text-[15px] text-paper placeholder:text-dim outline-none transition hover:border-white/20 focus:border-orange focus:bg-white/[0.06] focus:ring-1 focus:ring-orange"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="rounded-lg bg-orange px-8 py-3.5 font-bold text-ink transition hover:-translate-y-0.5 hover:bg-[#ff8d33] focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2 focus:ring-offset-ink">
+                            Send message
+                        </button>
+                    </form>
+
+                    <aside class="rounded-2xl border border-white/[0.10] bg-white/[0.03] p-6">
+                        <h3 class="font-bold text-paper">Or reach me directly</h3>
+
+                        <ul class="mt-4">
+                            <li class="border-t border-white/[0.08] py-3.5">
+                                <span class="block font-mono text-xs text-dim">Email</span>
+                                <a href="mailto:nguessanjbdavid@gmail.com"
+                                    class="mt-1 inline-block break-words border-b border-orange text-[.97rem] text-paper hover:text-orange">
+                                    nguessanjbdavid@gmail.com
+                                </a>
+                            </li>
+                            <li class="border-t border-white/[0.08] py-3.5">
+                                <span class="block font-mono text-xs text-dim">Phone</span>
+                                <a href="tel:+2250789196117"
+                                    class="mt-1 inline-block border-b border-orange text-[.97rem] text-paper hover:text-orange">
+                                    +225 07 89 19 61 17
+                                </a>
+                            </li>
+                            <li class="border-t border-white/[0.08] py-3.5">
+                                <span class="block font-mono text-xs text-dim">Based in</span>
+                                <span class="mt-1 inline-block text-[.97rem] text-paper">Abidjan, Côte d'Ivoire</span>
+                            </li>
+                            <li class="border-y border-white/[0.08] py-3.5">
+                                <span class="block font-mono text-xs text-dim">Code</span>
+                                <a href="#" class="mt-1 inline-block break-all border-b border-orange text-[.97rem] text-paper hover:text-orange">
+                                    github.com/thepaladin2026
+                                </a>
+                            </li>
+                        </ul>
+
+                        <p class="mt-4 text-sm font-light text-dim">
+                            I answer within a day, in French or English.
+                        </p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/[0.08] bg-[#08203E]">
+        <div class="mx-auto flex max-w-[1140px] flex-wrap items-center justify-between gap-5 px-5 py-9 sm:px-6">
+            <div>
+                <p class="font-bold tracking-tight text-paper">Jean Baptiste David N'Guessan</p>
+                <p class="text-sm font-light text-dim">Digital automation developer, Abidjan</p>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="https://github.com/thepaladin2026" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub"
+                    class="rounded-lg p-2 text-dim transition hover:bg-white/[0.06] hover:text-paper focus:outline-none focus:ring-2 focus:ring-orange">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.24c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.07 1.82 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23A11.4 11.4 0 0 1 12 6.35c1.02 0 2.05.14 3.01.41 2.3-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.76.84 1.23 1.91 1.23 3.22 0 4.62-2.8 5.64-5.48 5.94.43.37.81 1.1.81 2.22v3.31c0 .32.22.69.83.57A12 12 0 0 0 12 .5Z"/>
+                    </svg>
+                </a>
+
+                <a href="mailto:nguessanjbdavid@gmail.com" aria-label="Email"
+                    class="rounded-lg p-2 text-dim transition hover:bg-white/[0.06] hover:text-paper focus:outline-none focus:ring-2 focus:ring-orange">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                        <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                        <path d="m3 7 9 6 9-6"></path>
+                    </svg>
+                </a>
+
+                <a href="#top"
+                    class="border-b border-orange pb-0.5 text-sm text-paper transition hover:text-orange">
+                    Back to top
+                </a>
+            </div>
+
+            <p class="w-full text-xs text-dim sm:w-auto">
+                © 2026 All rights reserved
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
